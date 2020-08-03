@@ -32,7 +32,7 @@ export class Tab1Page {
     return this.dataService.getItems();
   }
 
-  async removeItem(item, index) {
+  async removeItem(item: any, index: string) {
     console.log("Removing Item - ", item, index);
     const toast = this.toastCtrl.create({
       message: 'Removing Item - ' + index + " ...",
@@ -60,17 +60,12 @@ export class Tab1Page {
       console.log("Shared successfully!");
     }).catch((error: any) => {
       console.error("Error while sharing ", error);
-    });
-    
-    this.socialSharing.shareViaEmail(message, subject, ['recipient@example.org']).then((res) => {
-      // Success
-    console.log("Shared successfully!");
-    }).catch((error: any) => {
-      console.error("Error while sharing ", error);
-    });
+    });    
 
   }
-  async editItem(item, index) {
+
+  
+  async editItem(item: any, index: string) {
     console.log("Edit Item - ", item, index);
     const toast = this.toastCtrl.create({
       message: 'Editing Item - ' + index + " ...",

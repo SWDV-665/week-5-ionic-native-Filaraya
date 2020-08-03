@@ -306,12 +306,6 @@ let Tab1Page = class Tab1Page {
             }).catch((error) => {
                 console.error("Error while sharing ", error);
             });
-            this.socialSharing.shareViaEmail(message, subject, ['recipient@example.org']).then((res) => {
-                // Success
-                console.log("Shared successfully!");
-            }).catch((error) => {
-                console.error("Error while sharing ", error);
-            });
         });
     }
     editItem(item, index) {

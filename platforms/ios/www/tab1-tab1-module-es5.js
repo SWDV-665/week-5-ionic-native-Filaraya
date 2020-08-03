@@ -532,14 +532,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     })["catch"](function (error) {
                       console.error("Error while sharing ", error);
                     });
-                    this.socialSharing.shareViaEmail(message, subject, ['recipient@example.org']).then(function (res) {
-                      // Success
-                      console.log("Shared successfully!");
-                    })["catch"](function (error) {
-                      console.error("Error while sharing ", error);
-                    });
 
-                  case 9:
+                  case 8:
                   case "end":
                     return _context3.stop();
                 }
